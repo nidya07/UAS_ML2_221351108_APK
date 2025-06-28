@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dina"
+        tools:targetApi="31">
+
+        <!-- Splash Activity sekarang menjadi LAUNCHER -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity bukan lagi LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Dina" />
+
+        <activity
+            android:name=".AnemiaActivity"
+            android:label="Cek Risiko Anemia"
+            android:theme="@style/Theme.Material3.DayNight" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about_title"
+            android:theme="@style/Theme.Material3.DayNight" />
+
+        <activity
+            android:name=".DatasetActivity"
+            android:label="@string/dataset_title"
+            android:theme="@style/Theme.Material3.DayNight" />
+
+        <activity
+            android:name=".FeaturesActivity"
+            android:label="@string/features_title"
+            android:theme="@style/Theme.Material3.DayNight" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".ModelActivity"
+            android:label="@string/model_title"
+            android:theme="@style/Theme.Material3.DayNight" />
+
+    </application>
+
+</manifest>

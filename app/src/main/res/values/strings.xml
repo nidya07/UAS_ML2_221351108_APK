@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Anemia Diagnosis</string>
+
+    <!-- Judul utama pada layar pengecekan anemia -->
+    <string name="anemia_check_title">Cek Risiko Anemia</string>
+
+    <!-- Deskripsi singkat di bawah judul utama -->
+    <string name="anemia_check_description">Masukkan data sederhana untuk mengetahui apakah seseorang berisiko mengalami anemia atau tidak.</string>
+
+    <!-- Teks petunjuk (hint) untuk inputan Jenis Kelamin -->
+    <string name="gender_hint">Jenis Kelamin</string>
+
+    <!-- Teks petunjuk (hint) untuk inputan Persentase Warna Merah -->
+    <string name="red_percentage_hint">Persentase Warna Merah  misal 0.1(%)</string>
+
+    <!-- Teks petunjuk (hint) untuk inputan Persentase Warna Hijau -->
+    <string name="green_percentage_hint">Persentase Warna Hijau (%)</string>
+
+    <!-- Teks petunjuk (hint) untuk inputan Persentase Warna Biru -->
+    <string name="blue_percentage_hint">Persentase Warna Biru (%)</string>
+
+    <!-- Teks petunjuk (hint) untuk inputan Kadar Hemoglobin -->
+    <string name="hemoglobin_level_hint">Kadar Hemoglobin (g/dL)</string>
+
+    <!-- Teks yang ditampilkan pada tombol untuk memulai pengecekan -->
+    <string name="check_result_button">Cek Hasil</string>
+
+    <!-- Teks placeholder untuk menampilkan hasil (digunakan dalam pratinjau layout) -->
+    <string name="result_placeholder">Hasil: Berisiko Mengalami Anemia</string>
+
+    <!-- Teks untuk Halaman Dataset -->
+    <string name="dataset_title">Informasi Dataset</string>
+    <string name="dataset_description_title">Deskripsi</string>
+    <string name="dataset_description_content">Dataset yang digunakan berisi 7 kolom utama dari 500 sampel data. Fitur-fitur ini mencakup data demografis dan hasil analisis citra darah, yang krusial untuk melatih model prediksi anemia.</string>
+    <string name="dataset_features_title">Fitur-Fitur Utama</string>
+
+    <!-- Nama Fitur -->
+    <string name="feature_gender">Jenis Kelamin</string>
+    <string name="feature_red_pixel">Persentase Merah</string>
+    <string name="feature_green_pixel">Persentase Hijau</string>
+    <string name="feature_blue_pixel">Persentase Biru</string>
+    <string name="feature_hemoglobin">Kadar Hb</string>
+
+    <string name="about_title">Tentang Aplikasi</string>
+    <string name="about_storyline_title">Storyline</string>
+    <string name="about_storyline_content">Aplikasi ini dibuat dengan tujuan untuk memberikan prediksi awal risiko anemia berdasarkan parameter sederhana dari citra darah dan kadar hemoglobin. Anemia adalah kondisi medis yang serius, dan deteksi dini sangat penting untuk penanganan yang tepat.</string>
+    <string name="about_dataset_source">Dataset yang digunakan untuk melatih model ini diambil dari platform Kaggle, yang berisi data citra sel darah merah.</string>
+    <string name="about_how_it_works_title">Cara Kerja Aplikasi</string>
+    <string name="about_how_it_works_content">Aplikasi ini menggunakan model Machine Learning yang telah dilatih untuk menganalisis data yang Anda masukkan. Berdasarkan pola dari data tersebut, model memberikan skor prediksi antara 0 dan 1. Skor di atas 0.5 diinterpretasikan sebagai berisiko mengalami anemia.</string>
+    <string name="about_disclaimer_title">Penting</string>
+    <string name="about_disclaimer_content">Aplikasi ini adalah alat bantu prediksi dan BUKAN pengganti diagnosis medis profesional. Selalu konsultasikan dengan dokter atau tenaga medis untuk diagnosis dan penanganan yang akurat.</string>
+
+
+    <string name="header_sex">Kelamin</string>
+    <string name="header_red_pixel">% Merah</string>
+    <string name="header_green_pixel">% Hijau</string>
+    <string name="header_blue_pixel">% Biru</string>
+    <string name="header_hb">Hb</string>
+    <string name="header_anaemic">Anemia</string>
+    <string name="dataset_table_title">data set</string>
+    <string name="header_red">red</string>
+    <string name="header_green">gren</string>
+    <string name="header_blue">blue</string>
+    <string name="about_made_by">dina</string>
+
+
+    <!-- Teks untuk Halaman Fitur -->
+    <string name="features_title">Fitur Model</string>
+
+    <string name="feature_title_sex">1). Jenis Kelamin (Sex)</string>
+    <string name="feature_type_sex">Tipe Data: Kategorikal</string>
+    <string name="feature_desc_sex">Fitur ini membedakan data berdasarkan jenis kelamin (Laki-laki atau Perempuan), yang dapat mempengaruhi nilai normal hemoglobin.</string>
+
+    <string name="feature_title_red">% Red Pixel</string>
+    <string name="feature_type_pixel">Tipe Data: Numerik (Float)</string>
+    <string name="feature_desc_red">Mewakili persentase piksel berwarna merah pada citra sel darah. Tingkat kecerahan dan saturasi warna merah bisa menjadi indikator konsentrasi sel darah merah.</string>
+
+    <string name="feature_title_green">% Green Pixel</string>
+    <string name="feature_desc_green">Mewakili persentase piksel berwarna hijau pada citra sel darah. Ini digunakan sebagai data pembanding terhadap komponen warna lain dalam analisis citra.</string>
+
+    <string name="feature_title_blue">% Blue Pixel</string>
+    <string name="feature_desc_blue">Mewakili persentase piksel berwarna biru pada citra sel darah. Sama seperti komponen hijau, ini membantu model memahami keseimbangan warna secara keseluruhan.</string>
+
+    <string name="feature_title_hb">Kadar Hemoglobin (Hb)</string>
+    <string name="feature_desc_hb">Ini adalah fitur paling penting untuk mendiagnosis anemia. Nilai ini mengukur jumlah protein hemoglobin dalam darah, yang secara langsung berkaitan dengan kemampuan darah membawa oksigen.</string>
+
+
+    <!-- Teks untuk Halaman Arsitektur Model -->
+    <string name="model_title">Arsitektur Model</string>
+    <string name="model_architecture_title">Arsitektur Model</string>
+    <string name="model_architecture_desc">Arsitektur model yang digunakan adalah sebuah Artificial Neural Network (ANN) sederhana yang terdiri dari beberapa lapisan (layers). Model ini dikembangkan menggunakan pustaka TensorFlow dan Keras untuk memprediksi risiko anemia berdasarkan fitur-fitur yang diberikan.</string>
+    <string name="model_preprocessing_title">Pre-Processing</string>
+
+    <string name="model_step1_title">Data Preparation</string>
+    <string name="model_step1_desc">Pada tahap Data Preparation, dilakukan proses awal untuk mempersiapkan data sebelum dianalisis lebih lanjut. Langkah pertama yang dilakukan adalah menghapus kolom "Number" dari DataFrame karena kolom tersebut tidak memiliki kontribusi penting dalam proses analisis. Penghapusan dilakukan menggunakan perintah df.drop(columns=[\'Number\'], inplace=True) agar kolom tersebut dihapus secara permanen dari DataFrame.</string>
+    <string name="model_step1_image_desc">Screenshot normalisasi dan transformasi data.</string>
+
+    <string name="model_step2_title">2. Pemisahan Fitur dan Target</string>
+    <string name="model_step2_desc">Dataset dipisahkan menjadi dua bagian: fitur (X), yang merupakan semua kolom input, dan target (y), yang merupakan kolom \'Anaemic\' yang ingin kita prediksi.</string>
+    <string name="model_step2_image_desc">Screenshot pemisahan data fitur dan target.</string>
+
+    <string name="model_step3_title">3. Proses Training Model</string>
+    <string name="model_step3_desc">Model ANN dilatih menggunakan data training. Arsitekturnya terdiri dari satu input layer, dua hidden layer dengan aktivasi ReLU, dan satu output layer dengan aktivasi Sigmoid yang menghasilkan probabilitas anemia.</string>
+    <string name="model_step3_image_desc">Screenshot ringkasan arsitektur model.</string>
+
+    <string name="model_step4_title">4. Evaluasi Model</string>
+    <string name="model_step4_desc">Setelah pelatihan, performa model dievaluasi menggunakan data test untuk mengukur akurasi dan loss. Hasil evaluasi menunjukkan seberapa baik model dapat menggeneralisasi pada data yang belum pernah dilihat sebelumnya.</string>
+    <string name="model_step4_image_desc">Screenshot grafik akurasi training dan validasi.</string>
+    <string name="splash_screen_title" />
+    <string name="crop_recommendation_icon">Anemia Prediction</string>
+
+
+</resources>
